@@ -1,11 +1,26 @@
 # Smart Auto-Swap
-Smart Auto-Swap is a mod that swaps the items on your hands 
-(both main hand and off hand) depending on the situation,
-## Setup
+**Smart Auto-Swap is a Client-Side mod that swaps the items on your hands 
+(both main hand and off hand) depending on the situation.** 
+Here is what this mod features:
+* **Automatically switches to the correct tool:** Swaps hands
+automatically when your main hand slot doesn't have the required tools 
+for block drops, while your off hand slot has one.
+* **Preserve Durability:** Prevents the tool on your off hand 
+slot from being used if its durability drops to a certain percent.
+* **Tapping / Holding your mouse can now determine what tools
+you are going to use:** For example, when you're holding an Ender
+Pearl on your off hand and a bow on your main hand, tapping the 
+"aim" key automatically throws an ender pearl, while holding the
+"aim" key uses your bow!
+* **+ Many more!**
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## Installation
+Smart Auto-Swap is currently only available on Fabric. Although
+not strictly required, it is highly recommended to **download 
+and install other mods like [ModMenu](https://modrinth.com/mod/modmenu) to configure how this mod
+should behave to match your needs.**
 
 ## License
-
-This project is available under the MIT License. Feel free to learn from it, modify it, and incorporate it into your own projects, provided you include the original copyright and license notice. See the [LICENSE](LICENSE) file for more details.
-[SmartAutoSwap.java](src/main/java/com/github/blueboy458/smartautoswap/SmartAutoSwap.java)
+This mod is available under the MIT License. 
+Feel free to learn from it, modify it, and incorporate it into 
+your own mods, as long as you credit the author (which is me). See the [LICENSE](LICENSE) file for more details!
