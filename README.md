@@ -1,5 +1,6 @@
 # Smart Auto-Swap
-
+Smart Auto-Swap is a mod that swaps the items on your hands 
+(both main hand and off hand) depending on the situation,
 ## Setup
 
 For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
