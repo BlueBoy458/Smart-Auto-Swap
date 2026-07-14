@@ -1,0 +1,11 @@
+{
+  "text.autoconfig.smart-auto-swap.title": "Smart Auto Swap Config",
+  "text.autoconfig.smart-auto-swap.option.modEnabled": "Enable Mod",
+  "text.autoconfig.smart-auto-swap.option.modEnabled.@Tooltip": "Enables Smart Auto-swap.",
+  "text.autoconfig.smart-auto-swap.option.swapMiningInCreative": "Swap Mining in Creative",
+  "text.autoconfig.smart-auto-swap.option.swapMiningInCreative.@Tooltip": "Whether to swap tools when you are destroying blocks in Creative Mode.",
+  "text.autoconfig.smart-auto-swap.option.preserveDurability": "Preserve Durability",
+  "text.autoconfig.smart-auto-swap.option.preserveDurability.@Tooltip": "Prevents the item in your offhand from being used when it's durability reaches a certain point.",
+  "text.autoconfig.smart-auto-swap.option.prioritizeHigherTiers": "Prioritize Higher Tiers",
+  "text.autoconfig.smart-auto-swap.option.prioritizeHigherTiers.@Tooltip": "Always selects the highest tier tool available (e.g., Netherite over Iron) when a block is attacked."
+}

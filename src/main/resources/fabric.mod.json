@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "smart-auto-swap",
+	"version": "${version}",
+	"name": "Smart Auto-Swap",
+	"description": "Automatically swap your items when you're mining, attacking, or building, depending on the context!",
+	"authors": [
+		"Blueskydev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/smart-auto-swap/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.github.blueboy458.smartautoswap.SmartAutoSwap"
+		],
+		"client": [
+			"com.github.blueboy458.smartautoswap.client.SmartAutoSwapClient"
+		],
+		"modmenu": [
+			"ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"smart-auto-swap.mixins.json",
+		{
+			"config": "smart-auto-swap.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"cloth-config": ">=26.1.154",
+		"yet_another_config_lib_v3": ">=3.9.0+26.1-fabric"
+	}
+}
