@@ -6,5 +6,5 @@ For setup instructions, please see the [Fabric Documentation page](https://docs.
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This project is available under the MIT License. Feel free to learn from it, modify it, and incorporate it into your own projects, provided you include the original copyright and license notice. See the [LICENSE](LICENSE) file for more details.
 [SmartAutoSwap.java](src/main/java/com/github/blueboy458/smartautoswap/SmartAutoSwap.java)
