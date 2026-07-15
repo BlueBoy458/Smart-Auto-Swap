@@ -9,7 +9,7 @@ automatically when your main hand slot doesn't have the required tools
 for block drops, while your off hand slot has one.
 * **🛡️ Preserve Durability 🛡️:** Prevents the tool on your off hand 
 slot from being used when its durability drops to a certain percent.
-* **⚔️ Tapping / Holding your mouse now determines what tools
+* **⚔️ Tapping / Holding your mouse now determine what tools
 you use 🏹:** For example, when you're holding an Ender
 Pearl on your off hand and a bow on your main hand, tapping the 
 "aim" key automatically throws the ender pearl, while holding the
