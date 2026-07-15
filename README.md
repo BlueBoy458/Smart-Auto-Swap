@@ -12,7 +12,7 @@ for block drops, while your off hand slot has one.
 * **🛡️ Preserve Durability (WIP - Not Implemented Yet) 🛡️:** Prevents the tool on your off hand 
 slot from being used when its durability drops to a certain percent.
 * **⚔️ Tapping / Holding your mouse now determine what tools
-you use 🏹 (WIP - Not Implemented Yet) :** For example, when you're holding an Ender
+you use (WIP - Not Implemented Yet) 🏹 :** For example, when you're holding an Ender
 Pearl on your off hand and a bow on your main hand, tapping the 
 "aim" key automatically throws the ender pearl, while holding the
 "aim" key uses your bow!
