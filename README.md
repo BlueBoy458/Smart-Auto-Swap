@@ -1,16 +1,18 @@
 # Smart Auto-Swap
+
+### **Note: This mod is still a WIP (Work-In-Progress), as some features listed here have not been added to the mod yet.**
 **Smart Auto-Swap is a Client-Side mod that swaps the items on your hands 
 (both main hand and off hand) depending on the situation.** 
 Here is what this mod features:
-* **Automatically switches to the correct tool:** Swaps hands
+* **⚒️Automatically switch to the correct tool ⚒️:** Swaps hands
 automatically when your main hand slot doesn't have the required tools 
 for block drops, while your off hand slot has one.
-* **Preserve Durability:** Prevents the tool on your off hand 
-slot from being used if its durability drops to a certain percent.
-* **Tapping / Holding your mouse can now determine what tools
-you are going to use:** For example, when you're holding an Ender
+* **🛡️ Preserve Durability 🛡️:** Prevents the tool on your off hand 
+slot from being used when its durability drops to a certain percent.
+* **⚔️ Tapping / Holding your mouse now determines what tools
+you use 🏹:** For example, when you're holding an Ender
 Pearl on your off hand and a bow on your main hand, tapping the 
-"aim" key automatically throws an ender pearl, while holding the
+"aim" key automatically throws the ender pearl, while holding the
 "aim" key uses your bow!
 * **+ Many more!**
 
@@ -20,7 +22,14 @@ not strictly required, it is highly recommended to **download
 and install other mods like [ModMenu](https://modrinth.com/mod/modmenu) to configure how this mod
 should behave to match your needs.**
 
+## Reporting Issues
+If you found any issues related to this mod (such as mod incompatibility,
+crashes, or mod behaving incorrectly, feel free to open an issue [here!](https://github.com/BlueBoy458/Smart-Auto-Swap/issues)  
+**(Important Note: The bug tracker should only be used when you encounter an issue
+related to this mod. For submitting a pull request, please submit your pull requests [here.](https://github.com/BlueBoy458/Smart-Auto-Swap/pulls))**
+
 ## License
 This mod is available under the MIT License. 
 Feel free to learn from it, modify it, and incorporate it into 
-your own mods, as long as you credit the author (which is me). See the [LICENSE](LICENSE) file for more details!
+your own mods, as long as you credit the original author of the
+mod (which is me). See the [LICENSE](LICENSE) file for more details!
