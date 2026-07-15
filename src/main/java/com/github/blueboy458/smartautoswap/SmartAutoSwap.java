@@ -51,7 +51,7 @@ public class SmartAutoSwap implements ModInitializer {
 
 	/**
 	 * Checks whether the current item in the specified item stack is a weapon, by iterating over the weapon tags.
-	 * @param handStack The stack of the current hand item.
+	 * @param currentStack The stack of the current hand item.
 	 * @param isProjectile whether to look for projectile weapons (e.g. Bow) instead of short
 	 *                     range weapons (e.g. Swords, axes, etc.)
 	 * @return true if the item is a weapon/projectile weapon, false otherwise.
