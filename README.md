@@ -14,6 +14,8 @@ you use 🏹:** For example, when you're holding an Ender
 Pearl on your off hand and a bow on your main hand, tapping the 
 "aim" key automatically throws the ender pearl, while holding the
 "aim" key uses your bow!
+* **Configuration Menu:** You are free to enable/disable or adjust
+one of these features to match your personal needs! (requires [ModMenu](https://modrinth.com/mod/modmenu))
 * **+ Many more!**
 
 ## 📥 Downloads 📥
@@ -32,7 +34,10 @@ should behave to match your needs.**
 If you found any issues related to this mod (such as mod incompatibility,
 crashes, or mod behaving incorrectly, feel free to open an issue [here!](https://github.com/BlueBoy458/Smart-Auto-Swap/issues)  
 **(Important Note: The bug tracker should only be used when you encounter an issue
-related to this mod. For submitting a pull request, please submit your pull requests [here.](https://github.com/BlueBoy458/Smart-Auto-Swap/pulls))**
+related to this mod. For submitting a pull request, please submit your pull requests [here.](https://github.com/BlueBoy458/Smart-Auto-Swap/pulls))  
+For technical support, it is currently unavailable until this mod is released. You
+can also directly contact me if there is a feature that needs to be added to the 
+original mod, and I will review it carefully!**
 
 ## 📄 License 📄
 This mod is available under the MIT License. 
