@@ -56,10 +56,10 @@ public class SmartAutoSwap implements ModInitializer {
 	 *                     range weapons (e.g. Swords, axes, etc.)
 	 * @return true if the item is a weapon/projectile weapon, false otherwise.
 	 */
-	public boolean isWeapon(ItemStack handStack, boolean isProjectile) {
-		final List<TagKey<Item>> weapon = isProjectile ? projectileWeaponTags : nonProjectileWeaponTags;
-		for (TagKey<Item> weaponTypes: weapon) {
-			if (handStack.is(weaponTypes)) {
+	public boolean isWeapon(ItemStack currentStack, boolean isProjectile) {
+		final List<TagKey<Item>> weapons = isProjectile ? projectileWeaponTags : nonProjectileWeaponTags;
+		for (TagKey<Item> weaponType: weapons) {
+			if (currentStack.is(weaponType)) {
 				return true;
 			}
 		}
