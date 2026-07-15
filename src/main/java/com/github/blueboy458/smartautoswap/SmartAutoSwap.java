@@ -8,18 +8,35 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.minecraft.resources.Identifier;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
+
 public class SmartAutoSwap implements ModInitializer {
 	public static final String MOD_ID = "smart-auto-swap";
 	public static ModConfig CONFIG;
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final List<TagKey<Item>> nonProjectileWeaponTags = List.of(
+			ItemTags.SWORDS,
+			ItemTags.AXES,
+			ItemTags.MACE_ENCHANTABLE,
+			ItemTags.TRIDENT_ENCHANTABLE
+	);
+	public static final List<TagKey<Item>> projectileWeaponTags = List.of(
+			ItemTags.BOW_ENCHANTABLE,
+			ItemTags.CROSSBOW_ENCHANTABLE,
+			ItemTags.TRIDENT_ENCHANTABLE
+	);
 
 	/**
 	* Swaps player's items in both hand by using the third `temp` variable.
@@ -30,18 +47,37 @@ public class SmartAutoSwap implements ModInitializer {
 		player.setItemInHand(InteractionHand.OFF_HAND, player.getItemInHand(InteractionHand.MAIN_HAND));
 		player.setItemInHand(InteractionHand.MAIN_HAND, offHandStack);
 	}
+
+	/**
+	 * Checks whether the current item in the specified item stack is a weapon, by iterating over the weapon tags.
+	 * @param handStack The stack of the current hand item.
+	 * @param isProjectile whether to look for projectile weapons (e.g. Bow) instead of short
+	 *                     range weapons (e.g. Swords, axes, etc.)
+	 * @return true if the item is a weapon/projectile weapon, false otherwise.
+	 */
+	public boolean isWeapon(ItemStack handStack, boolean isProjectile) {
+		final List<TagKey<Item>> weapon = isProjectile ? projectileWeaponTags : nonProjectileWeaponTags;
+		for (TagKey<Item> weaponTypes: weapon) {
+			if (handStack.is(weaponTypes)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
 
 		AutoConfig.register(ModConfig.class, GsonConfigSerializer::new);
 		CONFIG = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
 
 			AttackEntityCallback.EVENT.register(((player, level, hand, entity, hitResult) -> {
 				if (CONFIG.modEnabled && !player.isSpectator() && level instanceof ServerLevel) {
-					swapHands(player);
+					ItemStack offHandItem = player.getOffhandItem();
+					ItemStack mainHandItem = player.getMainHandItem();
+					if (!isWeapon(mainHandItem, false) && isWeapon(offHandItem, false)){
+						swapHands(player);
+					}
 				}
 
 				return InteractionResult.PASS;
