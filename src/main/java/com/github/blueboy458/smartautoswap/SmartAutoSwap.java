@@ -20,23 +20,24 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SmartAutoSwap implements ModInitializer {
 	public static final String MOD_ID = "smart-auto-swap";
 	public static ModConfig CONFIG;
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final List<TagKey<Item>> nonProjectileWeaponTags = List.of(
+	public static final ArrayList<TagKey<Item>> nonProjectileWeaponTags = new ArrayList<>(List.of(
 			ItemTags.SWORDS,
 			ItemTags.AXES,
 			ItemTags.MACE_ENCHANTABLE,
 			ItemTags.TRIDENT_ENCHANTABLE
-	);
-	public static final List<TagKey<Item>> projectileWeaponTags = List.of(
+	));
+	public static final ArrayList<TagKey<Item>> projectileWeaponTags = new ArrayList<>(List.of(
 			ItemTags.BOW_ENCHANTABLE,
 			ItemTags.CROSSBOW_ENCHANTABLE,
 			ItemTags.TRIDENT_ENCHANTABLE
-	);
+	));
 
 	/**
 	* Swaps player's items in both hand by using the third `temp` variable.
