@@ -3,7 +3,7 @@
 ### **Note: This mod is still a WIP (Work-In-Progress), as some features listed here have not been added to the mod yet.**
 **Smart Auto-Swap is a Client-Side mod for Minecraft: Java Edition that swaps the items on your hands 
 (both main hand and off hand) depending on the situation, without explicitly pressing the "Swap Items In Hands" keybind.**  
-Here is what this mod features:
+Here are what this mod features:
 * **⚒️Automatically switch to the correct tool ⚒️:** Swaps hands
 automatically when your main hand slot doesn't have the required tools 
 for block drops, while your off hand slot has one.
