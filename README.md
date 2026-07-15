@@ -1,6 +1,7 @@
 # 🛠️ Smart Auto-Swap 🛠️
 
-### **Note: This mod is still a WIP (Work-In-Progress), as some features listed here have not been added to the mod yet.**
+## **Note: This mod is still a WIP (Work-In-Progress), as some features listed here have not been added to the mod yet.**
+## **Additional Note: If you somehow found this mod and downloaded it before it released (which is not recommended), it is highly discouraged to use it on a server, as using it can be detected as "cheating" by the server's Anti-Cheat, and can get you permanently banned. I will try to make it safer to use in the future.**
 **Smart Auto-Swap is a Client-Side mod for Minecraft: Java Edition that swaps the items on your hands 
 (both main hand and off hand) depending on the situation, without explicitly pressing the "Swap Items In Hands" keybind.**  
 Here are what this mod features:
