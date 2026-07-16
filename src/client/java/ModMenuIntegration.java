@@ -1,4 +1,4 @@
-import com.github.blueboy458.smartautoswap.Config.ModConfig;
+import com.github.blueboy458.smartautoswap.config.ModConfig;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.shedaniel.autoconfig.AutoConfigClient;
