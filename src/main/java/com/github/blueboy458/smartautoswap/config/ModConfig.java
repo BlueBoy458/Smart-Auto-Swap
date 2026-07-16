@@ -52,9 +52,5 @@ public class ModConfig implements ConfigData {
                 ItemUseAnimation.BRUSH,
                 ItemUseAnimation.SPEAR
         ));
-//        public transient ArrayList<Class<?>> throwableItem = new ArrayList<>(List.of(
-//           ThrowableItemProjectile.class,
-//                ThrowablePotionItem.class
-//        ));
     }
 }

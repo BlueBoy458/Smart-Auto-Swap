@@ -23,13 +23,7 @@ public class SwapHandMixin {
 
     @Inject(method = "handlePlayerAction", at = @At("HEAD"))
     private void onPlayerAction(ServerboundPlayerActionPacket packet, CallbackInfo ci) {
-        // Check if the incoming packet action is a hand swap
-        if (packet.getAction() == START_DESTROY_BLOCK) {
-            LOGGER.info("The player is destroying a block.");
 
-            // Optional: If you want to log the actual player's name instead:
-            // LOGGER.info("{} swapped hand items!", this.player.getScoreboardName());
-        }
     }
 }
 

@@ -8,17 +8,12 @@ import com.github.blueboy458.smartautoswap.utilities.WeaponUtils;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Options;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import net.fabricmc.api.ClientModInitializer;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class SmartAutoSwapClient implements ClientModInitializer {
-	public static final String MOD_ID = "smart-auto-swap";
-	public static ModConfig CONFIG;
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitializeClient() {
@@ -37,11 +32,11 @@ public class SmartAutoSwapClient implements ClientModInitializer {
 			}
 
 			else if (useKey.isDown() && count == SmartAutoSwap.CONFIG.tickDuration){
-				LOGGER.info("Player held the \"use\" key, duration: {}", count);
+				SmartAutoSwap.LOGGER.info("Player held the \"use\" key, duration: {}", count);
 			}
 			else {
 				if (count < SmartAutoSwap.CONFIG.tickDuration && tickCounterChanged) {
-					LOGGER.info("Player tapped the \"use\" key, duration: {}", count);
+					SmartAutoSwap.LOGGER.info("Player tapped the \"use\" key, duration: {}", count);
 				}
 				tickCounter.set(0);
 			}
